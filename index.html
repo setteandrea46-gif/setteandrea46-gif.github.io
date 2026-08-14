@@ -10,7 +10,8 @@
   <style>
     :root{--ink:#1e1e1c;--paper:#f4efe7;--white:#fffdf9;--rust:#b85235;--muted:#716a62;--line:rgba(30,30,28,.14)}
     *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,sans-serif}a{color:inherit}.top{display:flex;align-items:center;justify-content:space-between;padding:22px clamp(20px,6vw,80px);border-bottom:1px solid var(--line);background:var(--white)}.brand{font-weight:800;letter-spacing:.16em}.top a:last-child{color:var(--rust);font-size:14px;font-weight:700;text-decoration:none}.hero{padding:clamp(75px,12vw,145px) 22px;text-align:center}.eyebrow{margin:0 0 18px;color:var(--rust);font-size:11px;font-weight:700;letter-spacing:.24em}.hero h1{max-width:900px;margin:0 auto;font:clamp(53px,9vw,110px)/.95 Georgia,serif;letter-spacing:-.055em}.hero h1 em{color:var(--rust);font-weight:400}.hero>p:not(.eyebrow){max-width:650px;margin:30px auto;color:var(--muted);font-size:17px;line-height:1.7}.button{display:inline-block;padding:17px 25px;background:var(--ink);color:#fff;text-decoration:none;font-weight:700}.content{padding:90px clamp(20px,7vw,105px);background:var(--white)}.intro{max-width:850px;margin:0 auto 65px;text-align:center}.intro h2,.details h2,.faq h2{margin:0 0 24px;font:clamp(38px,6vw,68px)/1 Georgia,serif;letter-spacing:-.035em}.intro p,.details p,.faq p{color:var(--muted);font-size:15px;line-height:1.8}.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;max-width:1120px;margin:0 auto 90px}.steps article{padding:30px;border:1px solid var(--line);background:var(--paper)}.steps span{color:var(--rust);font-size:11px;font-weight:700}.steps h3{margin:22px 0 12px;font:27px Georgia,serif}.steps p{margin:0;color:var(--muted);font-size:14px;line-height:1.7}.details{display:grid;grid-template-columns:1fr 1fr;gap:70px;max-width:1120px;margin:0 auto 85px;padding:65px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.faq{max-width:850px;margin:auto}.faq details{padding:22px 0;border-top:1px solid var(--line)}.faq details:last-child{border-bottom:1px solid var(--line)}summary{cursor:pointer;font:21px Georgia,serif;font-weight:700}.links{display:flex;flex-wrap:wrap;justify-content:center;gap:20px;margin-top:55px}.links a{color:var(--rust);font-weight:700}.foot{padding:35px 20px;background:var(--ink);color:#c9c1b7;text-align:center;font-size:12px}
-    @media(max-width:700px){.steps,.details{grid-template-columns:1fr}.details{gap:12px}.top{gap:15px}.brand{font-size:12px}.top a:last-child{font-size:12px}.intro{text-align:left}.content{padding-top:70px}}
+    .resources{max-width:1120px;margin:90px auto 0;padding-top:65px;border-top:1px solid var(--line)}.resources>h2{max-width:700px;margin:0 0 30px;font:clamp(38px,6vw,62px)/1 Georgia,serif}.resource-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.resource-grid a{display:block;padding:28px;border:1px solid var(--line);background:var(--paper);text-decoration:none}.resource-grid small{color:var(--rust);font-weight:700;letter-spacing:.12em}.resource-grid strong{display:block;margin:18px 0 10px;font:25px Georgia,serif}.resource-grid p{margin:0;color:var(--muted);font-size:13px;line-height:1.65}
+    @media(max-width:700px){.steps,.details,.resource-grid{grid-template-columns:1fr}.details{gap:12px}.top{gap:15px}.brand{font-size:12px}.top a:last-child{font-size:12px}.intro{text-align:left}.content{padding-top:70px}}
   </style>
 </head>
 <body>
@@ -51,6 +52,15 @@
         <details><summary>Cosa faccio se il link non funziona?</summary><p>Contatta lo studio tramite lo stesso recapito con cui hai ricevuto il collegamento, indicando nome e data dell’evento.</p></details>
         <nav class="links" aria-label="Informazioni"><a href="/polaroid-studio/privacy.html">Privacy</a><a href="/polaroid-studio/cookie.html">Cookie</a><a href="/polaroid-studio/contatti.html">Contatti</a></nav>
       </div>
+      <section class="resources" aria-labelledby="guide-title">
+        <p class="eyebrow">GUIDE DELLO STUDIO</p>
+        <h2 id="guide-title">Tutto ciò che serve per ricevere e conservare le fotografie.</h2>
+        <div class="resource-grid">
+          <a href="/come-funziona.html"><small>GUIDA 01</small><strong>Come funziona la consegna</strong><p>Dalla selezione del fotografo al link personale inviato al cliente.</p></a>
+          <a href="/scaricare-foto-telefono.html"><small>GUIDA 02</small><strong>Scaricare le foto dal telefono</strong><p>I passaggi per iPhone e Android e dove ritrovare i file salvati.</p></a>
+          <a href="/conservare-foto-evento.html"><small>GUIDA 03</small><strong>Conservare i ricordi nel tempo</strong><p>Copie, archivi e buone abitudini per non perdere le immagini.</p></a>
+        </div>
+      </section>
     </section>
   </main>
   <footer class="foot">© 2026 CIAK Fotografia · Gallerie fotografiche digitali per eventi</footer>
